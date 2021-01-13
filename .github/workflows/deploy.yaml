@@ -1,4 +1,4 @@
-name: GitHub Pages
+name: GitHub pages deploy
 
 on:
   push:
@@ -15,6 +15,10 @@ jobs:
         uses: actions/setup-node@v2.1.2
         with:
           node-version: "12.x"
+
+      - name: Get yarn cache directory path
+        id: yarn-cache-dir-path
+        run: echo "::set-output name=dir::$(yarn cache dir)"
 
       - name: Cache dependencies
         uses: actions/cache@v2
