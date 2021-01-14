@@ -1,6 +1,6 @@
 {
   "name": "github-workflow-test",
-  "homepage": "https://arcticlimer.github.io/github-workflow-test",
+  "homepage": "https://arcticlimer.github.io/github-actions-tests",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
